@@ -1,0 +1,151 @@
+<!-- index.html — SlangQuest (Homepage) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SlangQuest — Learn English Slang Faster</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="brand-name">EmoTiPaw</span>
+      </a>
+
+      <!-- CSS-only mobile menu -->
+      <input id="menu-toggle" type="checkbox" />
+      <label class="burger" for="menu-toggle" aria-label="Open menu">☰</label>
+
+      <nav class="menu">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#progress">Progress</a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="kpis">
+        <div class="card">
+          <div class="value g">+50</div>
+          <div class="hint">Micro-quests</div>
+        </div>
+        <div class="card">
+          <div class="value o">100%</div>
+          <div class="hint">Free to try</div>
+        </div>
+        <div class="card">
+          <div class="value v">4 Weeks</div>
+          <div class="hint">Learning plan</div>
+        </div>
+      </div>
+
+      <h1 class="headline">Train your English slang with fast, fun drills</h1>
+      <p class="subhead">Short sessions • Instant feedback • Progress you can see</p>
+
+      <div class="cta-row">
+        <a class="btn xl" href="auth.html?next=play.html">Play Now</a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="how">
+    <div class="wrap grid-3">
+      <div class="step card">
+        <div class="icon">🎯</div>
+        <h3>1) Quick Quest</h3>
+        <p>Answer a bite-size slang challenge in under 60 seconds.</p>
+      </div>
+      <div class="step card">
+        <div class="icon">💬</div>
+        <h3>2) Smart Hints</h3>
+        <p>Chat helper explains meanings.</p>
+      </div>
+      <div class="step card">
+        <div class="icon">📈</div>
+        <h3>3) Track Progress</h3>
+        <p>Earn points & badges as you move from Basic to Advanced.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES (mapped to your prototype screens) -->
+  <section id="features" class="features">
+    <div class="wrap">
+      <h2 class="section-title">Everything you need to keep learning</h2>
+      <div class="grid-4">
+        <article class="feature card">
+          <div class="icon">🕹️</div>
+          <h3>Play</h3>
+          <p>Timed multiple-choice & fill-in drills.</p>
+        </article>
+        <article class="feature card">
+          <div class="icon">🤖</div>
+          <h3>Chat</h3>
+          <p>Scripted helper for friendly examples and quick clarifications.</p>
+        </article>
+        <article class="feature card">
+          <div class="icon">🏅</div>
+          <h3>Progress</h3>
+          <p>Levels, badges, and a simple bar showing weekly targets.</p>
+        </article>
+        <article class="feature card">
+          <div class="icon">✅</div>
+          <h3>Feedback</h3>
+          <p>Instant result card with score and tips on what to improve.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRESS PREVIEW -->
+  <section id="progress" class="progress">
+    <div class="wrap">
+      <div class="panel">
+        <h2 class="section-title">Your progress at a glance</h2>
+        <div class="bar">
+          <span class="bar-fill" style="width:60%"></span>
+        </div>
+        <ul class="badges">
+          <li class="badge">Beginner ✓</li>
+          <li class="badge muted">Intermediate</li>
+          <li class="badge muted">Advanced</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO / CTA -->
+  <section id="demo" class="demo">
+    <div class="wrap card demo-card">
+      <h2 class="section-title">Ready to try?</h2>
+      <p>Start with one quick quest and see your score instantly.</p>
+      <a class="btn xl" href="auth.html?next=play.html">Play Now</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <p>© <span id="year">2025</span> EmoTiPaw · Prototype for study use</p>
+      <nav class="foot-links">
+        <a href="#survey">Survey</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!-- auth.html — SlangQuest (Login & Sign Up with JS) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SlangQuest — Login / Sign Up</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="brand-name">EmoTiPaw</span>
+      </a>
+      <nav class="menu">
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#progress">Progress</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- AUTH -->
+  <main class="auth">
+    <div class="wrap auth-wrap">
+      <div class="auth-card card">
+        <!-- Tabs -->
+        <div class="tabs js-tabs">
+          <button class="tab is-active" data-tab="login">Log in</button>
+          <button class="tab" data-tab="signup">Sign up</button>
+          <span class="glider" aria-hidden="true"></span>
+        </div>
+
+        <!-- LOGIN -->
+        <form id="loginForm" class="form" autocomplete="on" novalidate>
+          <h1 class="form-title">Welcome back</h1>
+
+          <label class="fi">
+            <span>Email</span>
+            <input id="loginEmail" type="email" name="email" placeholder="you@example.com" required>
+          </label>
+
+          <label class="fi">
+            <span>Password</span>
+            <div class="pw">
+              <input id="loginPassword" type="password" name="password" placeholder="••••••••" minlength="6" required>
+              <button class="pw-toggle" type="button" data-target="loginPassword" aria-label="Show/Hide password">👁</button>
+            </div>
+          </label>
+
+          <!-- removed Remember/Demo row -->
+
+          <button class="btn xl wfull" type="submit">Log in</button>
+
+          <p class="muted center sm next-link">
+            No account?
+            <button class="link-arrow js-switch" data-to="signup" type="button">
+              Create one <span class="arrow">➜</span>
+            </button>
+          </p>
+        </form>
+
+        <!-- SIGN UP -->
+        <form id="signupForm" class="form is-hidden" autocomplete="on" novalidate>
+          <h1 class="form-title">Create your account</h1>
+
+          <label class="fi">
+            <span>Nickname</span>
+            <input id="suNickname" type="text" name="nickname" placeholder="e.g., Nova" maxlength="24" required>
+          </label>
+
+          <label class="fi">
+            <span>Email</span>
+            <input id="suEmail" type="email" name="email" placeholder="you@example.com" required>
+          </label>
+
+          <label class="fi">
+            <span>Password</span>
+            <div class="pw">
+              <input id="suPassword" type="password" name="password" placeholder="min. 6 characters" minlength="6" required>
+              <button class="pw-toggle" type="button" data-target="suPassword" aria-label="Show/Hide password">👁</button>
+            </div>
+          </label>
+
+          <label class="fi">
+            <span>Confirm password</span>
+            <div class="pw">
+              <input id="suConfirm" type="password" name="confirm" placeholder="repeat password" minlength="6" required>
+              <button class="pw-toggle" type="button" data-target="suConfirm" aria-label="Show/Hide password">👁</button>
+            </div>
+          </label>
+
+          <!-- removed Terms checkbox -->
+
+          <button class="btn xl wfull" type="submit">Sign up</button>
+
+          <!-- removed "Already have an account?" row -->
+        </form>
+      </div>
+
+      <!-- Toast / messages -->
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <p>© <span id="year">2025</span> EmoTiPaw · Prototype for study use</p>
+      <nav class="foot-links">
+        <a href="index.html#survey">Survey</a>
+        <a href="index.html#privacy">Privacy</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
